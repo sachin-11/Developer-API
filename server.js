@@ -6,9 +6,13 @@ const app = express();
 //connected to db server
 connectDB();
 
-app.get("/", (req, res) => {
-  res.json({ msg: "Testing App" });
-});
+//body parser
+app.use(express.json());
+
+app.use("/api/users", require("./routes/api/user"));
+app.use("/api/auth", require("./routes/api/auth"));
+app.use("/api/profile", require("./routes/api/profile"));
+app.use("/api/posts", require("./routes/api/posts"));
 
 const PORT = process.env.PORT || 5000;
 

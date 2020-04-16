@@ -1,3 +1,6 @@
 {
-  "MongoURI": "mongodb://localhost:27017/collection"
+  "MongoURI": "mongodb://localhost:27017/collection",
+  "Secret": "Hellosachinsingh",
+  "githubClientId": "b3d0a782c326702e26df",
+  "githubSecret": "a7a673667e207176b57fe4d0e9ab85795b55e0ce"
 }
